@@ -31,6 +31,7 @@ Creada con **React + Vite** en el frontend y un **servidor Node.js/Express** opc
 # 🛠️ Instalación local
 ## 1️⃣ Clonar el repositorio
 git clone https://github.com/tuusuario/unlifo.git
+
 cd unlifo
 
 ## 2️⃣ Instalar dependencias
