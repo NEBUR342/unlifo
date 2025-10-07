@@ -1,17 +1,54 @@
-# Dependencias
+# ===============================
+# DEPENDENCIAS
+# ===============================
 node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
-# Archivos de logs
-logs/
-*.log
-
-# Variables de entorno
+# ===============================
+# VARIABLES DE ENTORNO
+# ===============================
 .env
+.env.local
+.env.development
+.env.production
+.env.test
 
-# Carpetas de compilación
+# ===============================
+# BUILD / COMPILACIÓN
+# ===============================
 dist/
 build/
+.vite/
+.cache/
+.tmp/
 
-# Sistema operativo
+# ===============================
+# LOGS
+# ===============================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===============================
+# SISTEMA OPERATIVO
+# ===============================
 .DS_Store
 Thumbs.db
+
+# ===============================
+# IDE / EDITORES
+# ===============================
+.vscode/
+.idea/
+*.swp
+
+# ===============================
+# DEPLOY (Render / Netlify / etc.)
+# ===============================
+.vercel/
+.netlify/
+render.yaml
