@@ -56,13 +56,13 @@ REDIRECT_URI=http://localhost:3000
 PORT=3000
 ```
 
-📌 Notas importantes:
+> No uses comillas (") alrededor de los valores.
 
-No uses comillas (") alrededor de los valores.
+> El archivo .env ya está en .gitignore para evitar exponer credenciales.
 
-El archivo .env ya está en .gitignore para evitar exponer credenciales.
+> Puedes obtener tus credenciales en Spotify Developer Dashboard
 
-Puedes obtener tus credenciales en Spotify Developer Dashboard
+> ⚠️ De momento la única credencial que funciona es CLIENT_ID=tu_client_id_de_spotify
 .
 
 ## 4️⃣ Ejecutar la aplicación
