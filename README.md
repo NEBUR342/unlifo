@@ -48,12 +48,13 @@ npm install
 
 Crea un archivo llamado .env en la raíz del proyecto con el siguiente contenido:
 
+```shell
 CLIENT_ID=tu_client_id_de_spotify
 CLIENT_SECRET=tu_client_secret_de_spotify
 REFRESH_TOKEN=tu_refresh_token
 REDIRECT_URI=http://localhost:3000
 PORT=3000
-
+```
 
 📌 Notas importantes:
 
@@ -65,8 +66,10 @@ Puedes obtener tus credenciales en Spotify Developer Dashboard
 .
 
 ## 4️⃣ Ejecutar la aplicación
-npm run dev
 
+```shell
+npm run dev
+```
 
 Luego abre en tu navegador:
 
