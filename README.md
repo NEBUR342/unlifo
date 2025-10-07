@@ -39,6 +39,9 @@ cd unlifo
 
 Asegúrate de tener Node.js 18 o superior instalado:
 
+```shell
+npm install
+```
 npm install
 
 ## 3️⃣ Configurar variables de entorno
