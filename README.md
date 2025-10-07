@@ -26,7 +26,7 @@ Creada con **React + Vite** en el frontend y un **servidor Node.js/Express** opc
 
 > Si deseas probarlo en tu cuenta, sigue los pasos de instalación local.
 
-> Si no quiere instalarlo puede contarme ya que permiten hasta 25 colaboradores, si agrego la cuenta puede ver el proyecto sin problemas desde la url.
+> Si no quiere instalarlo puede contactarme ya que permiten hasta 25 colaboradores, si agrego la cuenta puede ver el proyecto sin problemas desde la url.
 
 ---
 
