@@ -21,8 +21,8 @@ Creada con **React + Vite** en el frontend y un **servidor Node.js/Express** opc
 ## 🖥️ Demo pública
 
 👉 [https://unlifo.lovestoblog.com](https://unlifo.lovestoblog.com)
-⚠️ No podrás iniciar sesión debido a que Spotify solo deja que acceda gente si la configuración está en modo desplegado, pero esto solo se lo aceptan a las empresas.
-    Si quiere acceder no dude en contarme ya que permiten hasta 25 colaboradores, si te agrego puedes ver el proyecto sin problemas.
+> ⚠️ No podrás iniciar sesión debido a que Spotify solo deja que acceda gente si la configuración está en modo desplegado, pero esto solo se lo aceptan a las empresas.
+> Si quiere acceder no dude en contarme ya que permiten hasta 25 colaboradores, si te agrego puedes ver el proyecto sin problemas.
 
 > ⚠️ Debido a las limitaciones de **Spotify Developer Mode**, solo el propietario de la aplicación puede iniciar sesión sin solicitar producción.  
 > Si deseas probarlo en tu cuenta, sigue los pasos de instalación local.
