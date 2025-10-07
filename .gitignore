@@ -1,0 +1,54 @@
+# ===============================
+# DEPENDENCIAS
+# ===============================
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===============================
+# VARIABLES DE ENTORNO
+# ===============================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ===============================
+# BUILD / COMPILACIÓN
+# ===============================
+dist/
+build/
+.vite/
+.cache/
+.tmp/
+
+# ===============================
+# LOGS
+# ===============================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===============================
+# SISTEMA OPERATIVO
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# IDE / EDITORES
+# ===============================
+.vscode/
+.idea/
+*.swp
+
+# ===============================
+# DEPLOY (Render / Netlify / etc.)
+# ===============================
+.vercel/
+.netlify/
+render.yaml
