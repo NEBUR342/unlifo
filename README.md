@@ -145,9 +145,3 @@ build/
 ### Sistema operativo
 .DS_Store
 Thumbs.db
-
-# 1️⃣ Clonar el repositorio
-
-```bash
-git clone https://github.com/tuusuario/unlifo.git
-cd unlifo
