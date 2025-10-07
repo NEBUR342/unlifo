@@ -83,7 +83,7 @@ Autoriza el acceso
 
 Espera a que se carguen tus playlists (el sistema incluye paginación automática)
 
-☁️ Despliegue en Render
+## ☁️ Despliegue en Render
 ## 1️⃣ Crear una cuenta en Render
 
 Ve a https://render.com
