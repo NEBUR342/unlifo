@@ -128,21 +128,21 @@ cron.schedule("0 * * * *", () => {
 });
 
 📜 .gitignore recomendado
-# Dependencias
+### Dependencias
 node_modules/
 
-# Archivos de logs
+### Archivos de logs
 logs/
 *.log
 
-# Variables de entorno
+### Variables de entorno
 .env
 
-# Carpetas de compilación
+### Carpetas de compilación
 dist/
 build/
 
-# Sistema operativo
+### Sistema operativo
 .DS_Store
 Thumbs.db
 
