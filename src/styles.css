@@ -2,6 +2,7 @@ body {
     font-family: Inter, system-ui, sans-serif;
     background: #f3f4f6;
     margin: 0;
+    line-height: 1.5;
 }
 
 .container {
@@ -50,26 +51,33 @@ h1 {
 
 /* PLAYLISTS */
 .playlists {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px;
-    max-height: 500px;
-    overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  overflow-y: auto;
+  align-items: start;
+  padding-top: 5px;
 }
 
 .card {
-    padding: 12px;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    display: flex;
-    gap: 8px;
-    align-items: flex-start;
-    word-break: break-word;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: white;
+  word-break: break-word;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
 }
 
 /* BOTONES */
 .btn {
-    padding: 10px 10px;
+    padding: 10px 5px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -79,6 +87,11 @@ h1 {
 
 .btn:hover {
     opacity: 0.9;
+}
+
+.btn:focus {
+    outline: 2px solid #2563EB;
+    outline-offset: 2px;
 }
 
 .primary {
@@ -193,10 +206,15 @@ h1 {
 
     .playlists {
         grid-template-columns: 1fr;
-        max-height: none;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 10px;
     }
 }
 
+/* ESTILO ESPECIAL PARA LISTAS UNLIFO */
 .unlifo-card {
   border-color: #10B981;
   background: #ECFDF5;
@@ -206,7 +224,41 @@ h1 {
   accent-color: #10B981;
 }
 
+/* DESHABILITADOS */
 .card input[disabled] {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+/* CORREGIDO: LISTA-LISTA */
+.lista-lista {
+  display: flex;
+  gap: 8px;
+}
+
+/* PLAYLIST ITEM STYLES */
+.playlist-header {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.clickable-label {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.track-list {
+  margin-top: 6px;
+  margin-left: 24px;
+}
+
+.track-item {
+  display: block;
+}
+
+.expand-icon {
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: auto;
 }
