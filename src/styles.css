@@ -2,10 +2,7 @@ body {
     font-family: Inter, system-ui, sans-serif;
     background: #f3f4f6;
     margin: 0;
-<<<<<<< HEAD
     line-height: 1.5;
-=======
->>>>>>> f53748951b858dda397e3dda0ae9994c792ce672
 }
 
 .container {
@@ -54,9 +51,8 @@ h1 {
 
 /* PLAYLISTS */
 .playlists {
-<<<<<<< HEAD
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 16px;
   overflow-y: auto;
   align-items: start;
@@ -77,32 +73,11 @@ h1 {
 .card:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transform: translateY(-1px);
-=======
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px;
-    max-height: 500px;
-    overflow: auto;
-}
-
-.card {
-    padding: 12px;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    display: flex;
-    gap: 8px;
-    align-items: flex-start;
-    word-break: break-word;
->>>>>>> f53748951b858dda397e3dda0ae9994c792ce672
 }
 
 /* BOTONES */
 .btn {
-<<<<<<< HEAD
-    padding: 10px 5px;
-=======
-    padding: 10px 10px;
->>>>>>> f53748951b858dda397e3dda0ae9994c792ce672
+    padding: 10px 8px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -114,14 +89,11 @@ h1 {
     opacity: 0.9;
 }
 
-<<<<<<< HEAD
 .btn:focus {
     outline: 2px solid #2563EB;
     outline-offset: 2px;
 }
 
-=======
->>>>>>> f53748951b858dda397e3dda0ae9994c792ce672
 .primary {
     background: #2563EB;
     color: white;
@@ -234,7 +206,7 @@ h1 {
 
     .playlists {
         grid-template-columns: 1fr;
-<<<<<<< HEAD
+        max-height: none;
     }
 
     .btn {
@@ -244,12 +216,6 @@ h1 {
 }
 
 /* ESTILO ESPECIAL PARA LISTAS UNLIFO */
-=======
-        max-height: none;
-    }
-}
-
->>>>>>> f53748951b858dda397e3dda0ae9994c792ce672
 .unlifo-card {
   border-color: #10B981;
   background: #ECFDF5;
@@ -259,15 +225,11 @@ h1 {
   accent-color: #10B981;
 }
 
-<<<<<<< HEAD
 /* DESHABILITADOS */
-=======
->>>>>>> f53748951b858dda397e3dda0ae9994c792ce672
 .card input[disabled] {
   opacity: 0.5;
   cursor: not-allowed;
 }
-<<<<<<< HEAD
 
 /* CORREGIDO: LISTA-LISTA */
 .lista-lista {
@@ -301,5 +263,3 @@ h1 {
   font-weight: 500;
   margin-left: auto;
 }
-=======
->>>>>>> f53748951b858dda397e3dda0ae9994c792ce672
