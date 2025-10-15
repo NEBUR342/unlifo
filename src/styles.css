@@ -59,6 +59,12 @@ h1 {
   padding-top: 5px;
 }
 
+.image{
+  max-width: 36px;
+  max-height: 36px;
+  padding: 3px;
+}
+
 .card {
   display: grid;
   grid-template-rows: auto 1fr;

@@ -245,7 +245,7 @@ export default function App() {
           body: JSON.stringify({
             name: `Unlifo - ${new Date().toLocaleDateString("es-ES")}`,
             description:
-              "Creada automáticamente por Unlifo (no modificar esta descripción para que funcione correctamente en la página de unlifo.lovestoblog.com).",
+              "/unlifo.lovestoblog.com/",
             public: false,
           }),
         });
@@ -384,6 +384,9 @@ export default function App() {
                 className={`card ${pl.isUnlifo ? "unlifo-card" : ""}`}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <label style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                    {pl?.images?.length > 0 && (
+                      <img src={pl.images[0].url} alt={pl.name || "imagen"} class="image"/>
+                    )}
                     <input
                       type="checkbox"
                       checked={isPlaylistFullySelected(pl.id)}
@@ -413,39 +416,16 @@ export default function App() {
                           <hr/>
                           <input
                             type="checkbox"
-                            checked={isPlaylistFullySelected(pl.id)}
-                            onChange={async (e) => {
-                              const checked = e.target.checked;
-
+                            checked={selectedTracks.has(t.uri)}
+                            onChange={(e) => {
                               const newSet = new Set(selectedTracks);
-                              let tracks = playlistTracks[pl.id];
-                              if (!tracks) {
-                                try {
-                                  const items = await fetchAll(`https://api.spotify.com/v1/playlists/${pl.id}/tracks?limit=100`);
-                                  tracks = items
-                                    .filter((t) => t.track)
-                                    .map((t) => ({
-                                      id: t.track.id,
-                                      uri: t.track.uri,
-                                      name: t.track.name,
-                                      artist: t.track.artists?.[0]?.name || "",
-                                    }))
-                                    .sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
-                                  setPlaylistTracks((prev) => ({ ...prev, [pl.id]: tracks }));
-                                } catch (err) {
-                                  console.error("Error al cargar canciones de la playlist:", pl.name, err);
-                                  setStatus("Error al cargar canciones de la lista");
-                                  setStatusType("error");
-                                  return;
-                                }
-                              }
-                              if (checked) tracks.forEach((t) => newSet.add(t.uri));
-                              else tracks.forEach((t) => newSet.delete(t.uri));
-
+                              if (e.target.checked) newSet.add(t.uri);
+                              else newSet.delete(t.uri);
                               setSelectedTracks(newSet);
                             }}
-                            disabled={pl.id === targetId}
+                            
                           />
+
                           {t.name}
                         </label>
                       ))
