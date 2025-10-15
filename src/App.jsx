@@ -422,10 +422,7 @@ export default function App() {
                               if (e.target.checked) newSet.add(t.uri);
                               else newSet.delete(t.uri);
                               setSelectedTracks(newSet);
-                            }}
-                            
-                          />
-
+                            }}/>
                           {t.name}
                         </label>
                       ))
